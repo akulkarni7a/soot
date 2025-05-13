@@ -145,7 +145,7 @@ public class SootMethod extends AbstractHost implements ClassMember, MethodOrMet
   /**
    * Returns a hash code for this method consistent with structural equality.
    */
-  public int equivHashCode() {
+  public void equivHashCode() {
     return returnType.hashCode() * 101 + modifiers * 17 + name.hashCode();
   }
 
